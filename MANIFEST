@@ -1,0 +1,8 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+lib/Geo/Coder/Cache.pm
+t/00_load.t
+t/01_google.t
+t/02_yahoo.t

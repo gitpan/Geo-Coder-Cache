@@ -1,0 +1,9 @@
+Revision history for Perl extension Geo::Coder::Cache.
+
+0.02  Mon Nov 10 23:30:29 PST 2008
+	- first working version with Geo::Coder::Google and Geo::Coder::Yahoo
+
+0.01  Sat Nov  8 17:28:37 PST 2008
+	- original version; created by h2xs 1.23 with options
+		-b 5.5.3 -X -n Geo::Coder::Cache
+
