@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION $AUTOLOAD);
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 our $HOME = $ENV{'HOME'} || $ENV{'LOGDIR'};
 our %default_cache_args = (
