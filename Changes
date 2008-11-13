@@ -1,5 +1,8 @@
 Revision history for Perl extension Geo::Coder::Cache.
 
+0.04  Wed Nov 12 18:17:41 PST 2008
+	- separate namespaces for different geocoders
+
 0.03  Tue Nov 11 09:05:50 PST 2008
 	- add META.yml and upload again
 
