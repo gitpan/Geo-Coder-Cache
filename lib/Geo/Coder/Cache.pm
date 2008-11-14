@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION $AUTOLOAD);
 
-$VERSION = '0.04';
+$VERSION = '0.05';
 
 our $HOME = $ENV{'HOME'} || $ENV{'LOGDIR'};
 our %default_cache_args = (
@@ -15,7 +15,7 @@ our %default_cache_args = (
 sub new {
   my($class, %param) = @_;
   my $geocoder = delete $param{geocoder} or Carp::croak("Usage: new(geocoder => \$geocoder)");
-  $default_cache_args{namespace} .= '-' . ref($geocoder);
+  ($default_cache_args{namespace} .= '-' . lc ref($geocoder)) =~ s{::}{-}g;
   my %cache_args = (%default_cache_args, %param);
   my $self = $class->SUPER::new(\%cache_args);
   $self->{geocoder} = $geocoder;

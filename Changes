@@ -1,5 +1,8 @@
 Revision history for Perl extension Geo::Coder::Cache.
 
+0.05  Thu Nov 13 18:55:30 PST 2008
+	- use '-' instead of '::' in namespace to avoid problems on Win32
+
 0.04  Wed Nov 12 18:17:41 PST 2008
 	- separate namespaces for different geocoders
 
