@@ -13,7 +13,7 @@ plan skip_all => "Geo::Coder::Google required for testing" if $@;
 plan tests => 3;
 
 my $geocoder = Geo::Coder::Cache->new(
-    geocoder => Geo::Coder::Google->new(apikey => 'Geo::Coder::Cache'),
+    geocoder => Geo::Coder::Google->new(apikey => 'Geo::Coder::Cache', apiver => 3),
     cache_root => '.',
     );
 my $addr = '1600 Amphitheatre Pkwy, Mountain View, CA 94043';

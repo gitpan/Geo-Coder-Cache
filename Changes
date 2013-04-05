@@ -1,5 +1,10 @@
 Revision history for Perl extension Geo::Coder::Cache.
 
+0.06  Fri Apr  5 07:11:05 PDT 2013
+	- apply patches from Jozef Kutej <jozef.kutej@validad.net>
+	   - [rt.cpan.org #84441] upgrade to google api v3
+	   - [rt.cpan.org #84442] fix too many ->new calls crash issue
+
 0.05  Thu Nov 13 18:55:30 PST 2008
 	- use '-' instead of '::' in namespace to avoid problems on Win32
 

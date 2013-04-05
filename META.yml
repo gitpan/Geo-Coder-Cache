@@ -1,11 +1,22 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Geo-Coder-Cache
-version:      0.05
-version_from: lib/Geo/Coder/Cache.pm
-installdirs:  site
+---
+abstract: 'Add cache for Geo::Coder::*'
+author:
+  - 'Yen-Ming Lee <leeym@leeym.com>'
+build_requires:
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120630'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Geo-Coder-Cache
+no_index:
+  directory:
+    - t
+    - inc
 requires:
-    Cache::FileCache:              0
-
-distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.30
+  Cache::FileCache: 0
+version: 0.06
